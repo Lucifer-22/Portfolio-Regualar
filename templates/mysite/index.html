@@ -1,0 +1,524 @@
+{% extends 'mysite/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<!--===== HEADER =====-->
+{% include 'mysite/header.html' %}
+
+<!--==================== MAIN ====================-->
+<main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+
+            <div class="home__content grid">
+                <div class="home__social">
+                    <a href="" target="_blank" class="home__social-icon" id="myLinkedin">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="home__social-icon" id="myFacebook">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="home__social-icon" id="myGithub">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="home__social-icon" id="myInstagram">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="home__social-icon" id="myTwitter">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            <image class="home_blob-img" x='12' y='5' href="{% static 'assets/BJ_nobg.png' %}"/>
+                        </g>
+                    </svg>                    
+                </div>
+
+                <div class="home__data">
+                    <small class="s-color">Welcome to my portfolio website!</small>
+                    <h1 class="home__title">Hey I'm</h1><br>
+                    <span class="home__animationText">
+                        <div id="Typewriter"></div>
+                    </span>
+                    <h3 class="home__subtitle" id="home-bio"> Web developer</h3>
+                    <p class="home__description" id="home-about"> Blah blah blahhh blahh blahh blahh blahh blah blah</p>
+                    <a href="#contact" class="button button--flex">
+                        Contact Me<i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+        <h2 class="section__title">About</h2>
+        <span class="section__subtitle">My Introduction</span>
+
+        <div class="about__container container grid">
+            <img src="{% static 'assets/12.jpg' %}" alt="" class="about__img">
+
+            <div class="about__data">
+                <p class="about__description" id="home-about">
+                    Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.
+                </p>
+            </div>
+
+            <div class="about__info">
+                <div>
+                    <span class="about__info-title">08+</span>
+                    <span class="about__info-name">Years <br> experience </span>
+                </div>
+
+                <div>
+                    <span class="about__info-title">20+</span>
+                    <span class="about__info-name">Completed <br> projects </span>
+                </div>
+
+                <div>
+                    <span class="about__info-title">05+</span>
+                    <span class="about__info-name">Companies <br> worked </span>
+                </div>
+            </div>
+
+            <div class="about__buttons">
+                <a href="" download="" target="_blank" class="button button--flex">
+                    Download CV<i class="uil uil-download-alt button__icon"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+        
+
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal Journey</span>
+
+        <div class="qualification__container container">
+            <div class="qualification__tabs">
+                <div class="qualification__button button--flex qualification__active" data-target="#education">
+                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                    Education
+                </div>
+
+                <div class="qualification__button button--flex" data-target="#work">
+                    <i class="uil uil-briefcase-alt qualification__icon"></i>
+                    Work
+                </div>
+            </div>
+
+            <div class="qualification__sections">
+                 <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                <div class="qualification__content qualification__active" data-content id="education">
+
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Electrical Engineering</h3>
+                            <span class="qualification__subtitle">Tribhuvan University</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2016-2020
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Web Design</h3>
+                            <span class="qualification__subtitle">Harvard CS50</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020-2021
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--==================== QUALIFICATION 3 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">AutoCAD Developer</h3>
+                            <span class="qualification__subtitle">Tribhuvan University</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021+
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 4 ====================-->
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span> -->
+                        </div>
+                        <div>
+                            <h3 class="qualification__title">Masters</h3>
+                            <span class="qualification__subtitle">Stanford University</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2030-2050
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                <div class="qualification__content" data-content id="work">
+
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Design Engineer</h3>
+                            <span class="qualification__subtitle">KOS21-Japan</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2016-2020
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">EV Engineer</h3>
+                            <span class="qualification__subtitle">TESLA</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020-2021
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--==================== QUALIFICATION 3 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">CEO</h3>
+                            <span class="qualification__subtitle">Self- Nepal</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021+
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span> -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most Recent</span>
+
+        <div class="portfolio__container container swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Portfolio 1 -->
+                <div class="portfolio__container grid swiper-slide">
+                    <img src="{% static 'assets/portfolio1.jpg' %}" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Modern Website</h3>
+                        <p class="portfolio__decription">
+                            Website adaptable to all devices, with ui components and animated interactions.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio 2 -->
+                <div class="portfolio__container grid swiper-slide">
+                    <img src="{% static 'assets/portfolio2.jpg' %}" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">AutoCAD Design</h3>
+                        <p class="portfolio__decription">
+                            Website adaptable to all devices, with ui components and animated interactions.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio 3 -->
+                <div class="portfolio__container grid swiper-slide">
+                    <img src="{% static 'assets/portfolio3.jpg' %}" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Online Store</h3>
+                        <p class="portfolio__decription">
+                            Website adaptable to all devices, with ui components and animated interactions.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+    <!--==================== PROJECT IN MIND ====================-->
+    <section class="project section">
+        <div class="project__bg">
+            <div class="project__container container grid">
+                <div class="project__data">
+                    <h2 class="project__title">You Have a new project</h2>
+                    <p class="project__description">Contact me now and get a 30% discount on your new project.</p>
+                    <a href="#contact" class="button button--flex button--white">
+                        Contact
+                        <i class="uil uil-message project__icon button__icon"></i>
+                    </a>
+                </div>
+
+                <img src="{% static 'assets/project.png' %}" alt="" class="project__img">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+            <div class="contact__information">
+                <i class="uil uil-phone contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Call Me</h3>
+                    <span class="contact__subtitle">98-9898-9636</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Email</h3>
+                    <span class="contact__subtitle">mail@email.com</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-map-marker contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Location</h3>
+                    <span class="contact__subtitle">Shikoku, Ehime - Japan</span>
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+                <div class="contact__content">
+                    <label for="" class="contact__label">Name</label>
+                    <input type="text" class="contact__input">
+                </div>
+
+                <div class="contact__content">
+                    <label for="" class="contact__label">Email</label>
+                    <input type="email" class="contact__input">
+                </div>
+
+            </div>
+
+            <div class="contact__content">
+                <label for="" class="contact__label">Project</label>
+                <input type="text" class="contact__input">
+            </div>
+
+            <div class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+            </div>
+
+            <div>
+                <a href="#" class="button button--flex">
+                    Send Message
+                    <i class="uil uil-message button__icon"></i>
+                </a>
+            </div>
+        </form>
+    </section>
+</main>
+
+<!--==================== FOOTER ====================-->
+{% include 'mysite/footer.html' %}
+
+<!--===== MAIN =====
+<section class="introductionSection">
+    <div class="main container-fluid">
+        <div class="row home" >
+            <div class="greetingWrapper col-lg-12">
+                
+                <small class="s-color">Welcome to my portfolio website!</small>
+                <div id="typewriter"></div>
+                <div class="nameAnimation">
+                    <h1>Hey I'm</h1><br>
+                    <span class="text-info">
+                        <div id="Typewriter"></div>
+                    </span>
+                </div>
+
+                <div class="row bio justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <p class="s-color mt-5" id="miniBio"> This is mini about section.</p>
+                    </div>
+                </div>
+
+                <div class="social-icons m-0 mt-3" style="justify-content: center;">
+                    <a href="{{info.github}}" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="{{info.linkedin}}" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="{{info.instagram}}" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="{{info.facebook}}" target="_blank">
+                        <i class="fab fa-facebook-f"></i></i>
+                    </a>
+                    <a href="{{info.twitter}}" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="bottomWrapper">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col-5">
+                        <div class="iconAnimation"></div>
+                    </div>
+                    <div class="col">
+                        <div id="theme-options-wrapper">
+                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                        </div>
+                        <p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+                
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="s2">
+    <div class="main container">
+        <div class="education">
+            <a href="/#education" class="scroll__down">
+                <span class="scroll__mouse">
+                    
+                    <span class="scroll__wheel"></span>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+-->
+{% endblock body %}

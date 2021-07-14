@@ -1,0 +1,146 @@
+/*font-family: 'Maven Pro', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Russo One', sans-serif;*/
+:root{
+	--mainColor:#d1d8e0;
+	--secondaryColor:#17D778;
+    --bgColor:#1A181E;
+    --alternateColor:#2c303a;
+
+	--borderColor:#c1c1c1;
+
+	--mainText: azure;
+	--secondaryText:rgb(230, 220, 220);
+	--selectedText: #d1d8e0;
+
+	--themeDotBorder:#24292e;
+
+	--previewBg:rgb(251, 249, 243, 0.8);
+	--previewShadow:#f0ead6;
+
+
+	--buttonColor:black;
+}
+
+
+html, body{
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: var(--bgColor);
+}
+
+body *{
+	transition: 0.8s;
+}
+
+
+h1, h2, h3, h4, h5, h6, strong{
+	color: var(--mainText);
+	font-family: 'Russo One', sans-serif;
+	font-weight: 500;
+}
+
+p, li, span, label, input, textarea{
+	color: var(--secondaryText);
+	font-family: 'Roboto Mono', monospace;
+}
+
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+.s-color{
+	color: var(--selectedText);
+}
+
+.introductionSection{
+	overflow: auto;
+	margin: 0 auto;
+}
+
+.home{
+	height: 100vh;
+}
+
+
+.greetingWrapper{
+	display: grid;
+	text-align: center;
+	align-content: center;
+	min-height: 10em;
+}
+
+.Typewriter__wrapper{
+	font-size: x-large;
+	color: var(--mainText);
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+}
+
+.Typewriter__cursor{
+	font-size: xx-large;
+	color: greenyellow;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+}
+
+/* Theme Works starts from here */
+#theme-options-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.theme-dot{
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50%;
+
+	margin: 5px;
+	border:2px solid var(--themeDotBorder);
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+	cursor: pointer;
+}
+
+
+.theme-dot:hover{
+	height: 35px;
+	width: 35px;
+	background-color: black;
+	border-radius: 50%;
+	border-width: 5px;
+}
+
+
+#light-mode{
+	background-color: #fff;
+}
+
+#blue-mode{
+	background-color: #192734;
+}
+
+#green-mode{
+	background-color: #78866b;
+}
+
+#purple-mode{
+	background-color: #7E4C74;
+}
+
+#settings-note{
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+}
